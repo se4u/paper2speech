@@ -22,7 +22,7 @@ INTRO[11] = 'SECTION'
 def nips(args):
   pf, text = -1, []
   for cf,t in spans(args.fns):
-    if cf in [5, 8]:
+    if cf in [5]:
       continue
     if pf == cf:
       text[-1] = merge(text[-1], t)
